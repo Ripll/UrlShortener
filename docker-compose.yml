@@ -2,8 +2,6 @@ version: '3'
 services:
   web:
     build: .
-    volumes:
-      - C:/Users/ripll/PycharmProjects/UrlShortener:/app
     ports:
       - "80:80"
     depends_on:
