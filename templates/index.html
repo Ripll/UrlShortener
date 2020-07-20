@@ -9,8 +9,20 @@
 			<input type="text" class="form-control"  id="enterLink"
 				   name="url" aria-label="Large" aria-describedby="inputGroup-sizing-sm"
 				   placeholder="https://evo.company/" required>
-
+			<div class="form-group">
+				<label for="lifetime_select">Destroy after:</label>
+				<select name="lifetime" class="form-control" id="lifetime_select">
+				  	<option value="0">Never</option>
+					<option value="1">1m</option>
+				  	<option value="30">30m</option>
+				  	<option value="60">1h</option>
+				  	<option value="360">6h</option>
+				  	<option value="1440">24h</option>
+					<option value="10080">7d</option>
+				</select>
+			  </div>
 			<small class="form-text text-muted">It is the perfect free URL shortener for transforming long, ugly links into nice, memorable and trackable short URLs.</small>
+
 			<div class="btn-wrapper">
 				<button type="button" id="submit_btn" class="btn btn-lg btn-danger">Create short link</button>
 			</div>

@@ -5,5 +5,17 @@ services:
     volumes:
       - C:/Users/ripll/PycharmProjects/UrlShortener:/app
     ports:
-      - "8443:80"
-    command: /start-reload.sh
+      - "80:80"
+    depends_on:
+      - db
+  db:
+      image: "postgres"
+      environment:
+        - POSTGRES_USER=evo_user
+        - POSTGRES_PASSWORD=evo_password
+        - POSTGRES_DB=urlshortener
+      volumes:
+        - database-data:/var/lib/postgresql/data/
+
+volumes:
+  database-data:

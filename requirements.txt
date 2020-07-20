@@ -1,6 +1,6 @@
 fastapi
 tortoise-orm
 python-multipart
-aiosqlite
+asyncpg
 aiofiles
 jinja2

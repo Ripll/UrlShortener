@@ -17,7 +17,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <div class="navbar-nav">
-                {% for route, caption in [('index', 'Home')] %}
+                {% for route, caption in [('index', 'Home'), ('get_stats', 'Stats')] %}
                     <a class="nav-item nav-link {% if request.url == url_for(route) %}active{% endif %}" href="{{url_for(route)}}">{{ caption }}</a>
                 {% endfor %}
             </div>

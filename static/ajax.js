@@ -31,7 +31,7 @@ function sendAjaxForm(result_form, ajax_form, url) {
         }
     },
     error: function(response) { // Данные не отправлены
-        $('#result_form').html('Ошибка. Данные не отправлены.');
+        alert("Error")
     }
     });
 

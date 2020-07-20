@@ -19,7 +19,9 @@ form {
     width: 80%;
     max-width: 800px;
 }
-
+.form-group {
+    padding-top: 10px;
+}
 #linkArea {
 	width: 100%;
 }
