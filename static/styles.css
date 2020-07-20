@@ -1,0 +1,33 @@
+.navbar-brand img{
+    width: 150px;
+}
+
+.navbar-nav li {
+    padding-left: 20px;
+}
+
+.nav-link {
+    font-size: 1.1em !important;
+}
+
+.content {
+    display: flex;
+	justify-content: center;
+}
+
+form {
+    width: 80%;
+    max-width: 800px;
+}
+
+#linkArea {
+	width: 100%;
+}
+
+.btn-wrapper {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+

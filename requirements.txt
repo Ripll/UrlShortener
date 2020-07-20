@@ -1,0 +1,6 @@
+fastapi
+tortoise-orm
+python-multipart
+aiosqlite
+aiofiles
+jinja2

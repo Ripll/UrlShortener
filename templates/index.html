@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}- Index{% endblock %}
+{% block content %}
+		<form id="ajax_form" action="" method="post">
+            <label><h1 id="startText">Enter your link:</h1>
+			</label><br>
+
+			<input type="text" class="form-control"  id="enterLink"
+				   name="url" aria-label="Large" aria-describedby="inputGroup-sizing-sm"
+				   placeholder="https://evo.company/" required>
+
+			<small class="form-text text-muted">It is the perfect free URL shortener for transforming long, ugly links into nice, memorable and trackable short URLs.</small>
+			<div class="btn-wrapper">
+				<button type="button" id="submit_btn" class="btn btn-lg btn-danger">Create short link</button>
+			</div>
+		</form>
+
+		<form id="result_form" style="display: none">
+			<h1>Your link:</h1>
+		  	<div class="form-group row">
+				<div class="col-sm-12">
+					<input type="text" readonly class="form-control"
+						   id="result_input" onClick="this.setSelectionRange(0, this.value.length)"
+						   value="">
+				</div>
+		  	</div>
+			<button type="button" id="new_one_btn" class="btn btn-primary">Create new one</button>
+		</form>
+{% endblock %}
