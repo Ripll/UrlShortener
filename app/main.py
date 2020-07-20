@@ -1,5 +1,3 @@
-import typing
-import uuid
 from tortoise.contrib.fastapi import register_tortoise
 from models.models import Links, Link
 from fastapi import FastAPI, Request, Form
